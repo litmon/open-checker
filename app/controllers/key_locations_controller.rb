@@ -3,20 +3,21 @@ class KeyLocationsController < ApplicationController
   before_action :set_key_location
 
   def index
-    @key_location = KeyLocaiton.find_by_id(1) || KeyLocation.new
+    @key_location = KeyLocation.find_by(key: Key.first) || KeyLocation.new
   end
 
   def create
     @key_location = KeyLocation.new(key_locations_params)
 
     if @key_location.save
-      redirect root_path
+      redirect_to root_path
     end
   end
 
-  def destroy
-    @key_location.destroy
-    redirect root_path
+  def update
+    @key_location.update(key_locations_params)
+
+    redirect_to root_path
   end
 
   private
@@ -26,7 +27,6 @@ class KeyLocationsController < ApplicationController
   end
 
   def set_key_location
-    @key_location = KeyLocation.find_by_id(key_locations_params[:id])
+    @key_location = KeyLocation.find_by_id(params[:id])
   end
-
 end

@@ -1,0 +1,7 @@
+
+- Location.all.each do |location|
+  = form_for @key_location do |f|
+    - is_active = @key_location && @key_location.location == location ? "active" : "deactive"
+    = f.hidden_field :key_id, value: Key.first.id
+    = f.hidden_field :location_id, value: location.id
+    = f.submit location.name, class: is_active
