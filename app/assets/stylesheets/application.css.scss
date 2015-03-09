@@ -2,3 +2,22 @@
  *= require_tree .
  *= require_self
  */
+
+html, body{ height: 100% }
+
+body{
+  background-color: #140;
+}
+
+#container{
+  padding-bottom: 20px;
+}
+
+#footer{
+  position: fixed !important;
+  width: 100%;
+  height: 20px;
+  bottom: 0px;
+  border-bottom: 20px solid #a60;
+}
+
