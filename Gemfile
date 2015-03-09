@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass'
 gem 'less-rails'
 gem 'therubyracer'
+gem 'rails_12factor', group: :production
 
 gem 'annotate'
 gem 'slim-rails'
