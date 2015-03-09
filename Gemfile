@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+gem 'therubyracer'
+
 gem 'annotate'
 gem 'slim-rails'
 gem 'hirb'
