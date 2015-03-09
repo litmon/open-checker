@@ -1,12 +1,18 @@
 /*
- *= require_tree .
  *= require_self
+ *= require_tree .
  */
+
+@font-face{
+  font-family: tanuki;
+  src: font_url('TanukiMagick.ttf') format('truetype');
+}
 
 html, body{ height: 100% }
 
 body{
-  background-color: #140;
+  background-image: image-url("background.png");
+  font-family: tanuki;
 }
 
 #container{
