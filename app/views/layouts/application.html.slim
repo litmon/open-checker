@@ -9,6 +9,11 @@ html
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
   body
     #container
-      = yield
+      nav#header
+        ul.menu
+          li = link_to '場所を追加', locations_path
+          li = link_to 'ホームに戻る', root_path
+      #content
+        = yield
       #footer
 
