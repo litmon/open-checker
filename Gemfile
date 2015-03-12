@@ -5,6 +5,7 @@ gem 'less-rails'
 gem 'therubyracer'
 gem 'rails_12factor', group: :production
 
+gem 'devise'
 gem 'annotate'
 gem 'slim-rails'
 gem 'hirb'
