@@ -12,3 +12,5 @@ Location.create(name: "小ホール")
 Location.create(name: "中ホール")
 Location.create(name: "返却済み")
 
+
+User.create(email: "example@example.com", password: "")
